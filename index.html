@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Header Style */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #00e5ff;
+            text-shadow: 0px 0px 15px rgba(0, 229, 255, 0.8);
+        }
+
+        /* Hologram Effect for Sections */
+        .hologram {
+            position: relative;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 0px 30px rgba(0, 229, 255, 0.8);
+            animation: hologramGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes hologramGlow {
+            0% {
+                box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.8);
+            }
+            100% {
+                box-shadow: 0px 0px 30px rgba(0, 229, 255, 1);
+            }
+        }
+
+        /* Principal Section */
+        #principal {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+            text-align: center;
+        }
+
+        #principal img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.8);
+        }
+
+        /* Teachers Gallery */
+        #teachers {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .teacher-card {
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .teacher-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 229, 255, 0.8);
+        }
+
+        .teacher-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            color: #00e5ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our School</h1>
+    </header>
+
+    <!-- Principal Section -->
+    <section id="principal" class="hologram">
+        <img src="c:\Users\Admin\Documents\WhatsApp Image 2024-11-10 at 15.53.25_d414e43d.jpg" alt="Principal">
+        <div>
+            <h2>Principal's Message</h2>
+            <p>Hello, I am the principal of this esteemed school. Our mission is to provide quality education and nurture the talents of our students. Welcome to our school website!</p>
+        </div>
+    </section>
+
+    <!-- Teachers Gallery Section -->
+    <section id="teachers">
+        <div class="hologram">
+            <h2>Our Dedicated Teachers</h2>
+            <p>Meet our passionate and skilled teaching staff.</p>
+        </div>
+        <div class="teacher-card hologram">
+            <img src="teacher1.jpg" alt="Teacher 1">
+            <h3>Mr. Sharma</h3>
+            <p>Mathematics Teacher</p>
+        </div>
+        <div class="teacher-card hologram">
+            <img src="teacher2.jpg" alt="Teacher 2">
+            <h3>Ms. Kapoor</h3>
+            <p>Science Teacher</p>
+        </div>
+        <div class="teacher-card hologram">
+            <img src="teacher3.jpg" alt="Teacher 3">
+            <h3>Mr. Verma</h3>
+            <p>History Teacher</p>
+        </div>
+        <div class="teacher-card hologram">
+            <img src="teacher4.jpg" alt="Teacher 4">
+            <h3>Mr. Amit</h3>
+            <p> Art Teacher</p>
+        </div>
+        <div class="teacher-card hologram">
+            <img src="School 1.jpg" alt="School 1">
+            <h3>Photo</h3>
+            <p>About School</p>
+        </div>
+        <div class="teacher-card hologram">
+            <img src="School 2.jpg" alt="School 2">
+            <h3>Photo</h3>
+            <p>About School</p>
+        </div>
+        <div class="teacher-card hologram">
+            <img src="Schhol 3.jpg" alt="School 3">
+            <h3>Photo</h3>
+            <p>About School</p>
+        </div>
+        <!-- Add more teachers as needed -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Our School. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
